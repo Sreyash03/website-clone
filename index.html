@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Clothing</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-lang border">
+                <div class="lang-icon">
+                    <i class="fa-solid fa-flag"></i>
+                </div>
+                <select class="search-lang">
+                    <option>EN</option>
+                    <option>ES</option>
+                    <option>FR</option>
+                </select>
+            </div>
+
+            <div class="nav-signin">
+                <!--<p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>-->
+                <a href="views/login.html" class="sign-in-button">Sign In</a>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="cart-text">Cart</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="panel">
+                <div class="panel-all" onclick="toggleCategoriesMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                    All    
+                </div>
+
+                <div class="deals">Today's Deals</div>
+                <div class="cust-serv">Customer Service</div>
+                <div class="reg">Registry</div>
+                <div class="gift">Gift Cards</div>
+                <div class="sell">Sell</div>
+            </div>
+        </div>
+        <div class="image1">
+            <!--<a href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=23466307011&pd_rd_w=kjsM1&content-id=amzn1.sym.f8d62906-a452-4f4d-b404-3d26f153fbdc&pf_rd_p=f8d62906-a452-4f4d-b404-3d26f153fbdc&pf_rd_r=S5361P95YDZNZVY1VBEV&pd_rd_wg=GDQy1&pd_rd_r=d083075c-c3b7-4d67-a482-5e516eb7ed1a&ref_=pd_hp_d_hero_unk">
+                <img src="image1.jpg"/>
+                </a>-->
+            <div class="text-on-img1">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in/">Click here to go to amazon.in</a></div>    
+        </div>
+        <div class="main">
+            <div class="box1">
+                <p class="text1">Amazon Gadget Store</p>
+                <div class="box1-img1"><img src="box1-img1.jpg" /></div>
+                <p>Smartphones</p>
+            </div>
+            <div class="box2">
+                <p class="text2">Fashion trends you like</p>
+                <div class="box2-img1"><img src="box2-img2.jpeg" /></div>
+                <p>Summer Wardrobe</p>
+            </div>
+            <div class="box3">
+                <p class="text3">Furniture</p>
+                <div class="box3-img1"><img src="box3_img1.jpeg" /></div>
+                <p>Couch</p>
+            </div>
+            <div class="box4">
+                <p class="text4">Deals in laptops</p>
+                <div class="box4-img1"><img src="box4-img1.jpeg" /></div>
+                <p>Laptop</p>
+            </div>
+        </div>
+
+        <div class="signin">
+            <p class="see">See personalized recommendations</p>
+            <a href="login.html"><button class="sign">Sign in</button></a>
+            <p class="new">New customer? <a href="register.html">Start here.</a></p>
+        </div>
+
+        <div class="back2top" onclick="scrollToTop()">
+            Back to top
+        </div>
+
+        <div class="lower-content">
+            <!--<div class="lower1">
+                <ul><p class="ltext1">Get to Know us</p></ul>
+                <ul>Careers</ul>
+                <ul>Blog</ul>
+                <ul>About Amazon</ul>
+                <ul>Investor Relations</ul>
+                <ul>Amazon Devices</ul>
+                <ul>Amazon Science</ul>
+            </div>
+            </div>
+            <div class="lower2">
+                <ul><p class="ltext2">Make Money with Us</p></ul>
+                <ul>Sell products on Amazon</ul>
+                <ul>Sell apps on Amazon</ul>
+                <ul>Become an Affliate</ul>
+                <ul>Advertise Your Products</ul>
+                <ul>Self-Publish with Us</ul>
+                <ul>Host an Amazon Hub</ul>
+            </div>
+            <div class="lower3">
+                <ul><p class="ltext3">Amazon Payment Products</p></ul>
+                <ul>Amazon Business Card</ul>
+                <ul>Shop with Points</ul>
+                <ul>Reload Your Balance</ul>
+                <ul>Amazon Currency Converter</ul>
+            </div>
+            <div class="lower4">
+                <ul><p class="ltext4">Let Us Help You</p></ul>
+                <ul>Amazon and COVID-19</ul>
+                <ul>Your Account</ul>
+                <ul>Your Orders</ul>
+                <ul>Shipping Rates and Policies</ul>
+                <ul>Returns and Replacements</ul>
+                <ul>Amazon Assistant</ul>
+                <ul>Help</ul>-->
+            <footer>
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </footer>    
+        </div>
+    </header>
+
+    <script>
+        function performSearch() {
+            alert("Search functionality can be integrated here.");
+        }
+
+        function toggleCategoriesMenu() {
+            alert("Expandable categories menu goes here.");
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
