@@ -214,7 +214,6 @@ span {
 
 .image1 {
     background-image: url("image1i.jpg");
-    /*background-color: rgb(175, 167, 167);*/
     height: 60px;
     color: white;
     display: flex;
